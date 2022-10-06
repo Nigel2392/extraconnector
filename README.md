@@ -9,7 +9,16 @@ var S = extraconnector.Server{
     Current_Channel: 0
 }
 ```
+Then connect to the caching server like so:
+```
+S.Connect()
+```
+To disconnect:
+```
+S.Disconnect()
+```
 
+To send commands:
 ```
 // Set Channel for server
 func (s *Server) MessageSetChannel(channel int) {
